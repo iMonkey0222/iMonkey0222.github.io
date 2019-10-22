@@ -122,7 +122,18 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
-                            <!-- add jianshu add target = "_blank" to <a> by BY -->
+                            <!--kesci Link-->
+                            {% if site.kesci_userid %}
+                            <li>
+                                <a target="_blank" href="https://www.kesci.com/home/user/profile/{{ site.kesci_userid}}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa  fa-stack-1x fa-inverse">和鲸</i>
+                                    </span>
+
+                            </li>
+                            {% endif %}
+                            <!-- add jianshu add target = "_blank" to <a>-->
                             {% if site.jianshu_username %}
                             <li>
                                 <a target="_blank" href="https://www.jianshu.com/u/{{ site.jianshu_username }}">
@@ -131,16 +142,6 @@ layout: default
                                         <i class="fa  fa-stack-1x fa-inverse">简</i>
                                     </span>
                                 </a>
-                            </li>
-                            {% endif %}
-                            {% if site.kesci_userid %}
-                            <li>
-                                <a target="_blank" href="https://www.kesci.com/home/user/profile/{{ site.kesci_userid}}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa  fa-stack-1x fa-inverse">鲸</i>
-                                    </span>
-
                             </li>
                             {% endif %}
                             {% if site.twitter_username %}
@@ -189,6 +190,18 @@ layout: default
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% endif %}
+                            <!--intagram-->>
+                            {% if site.instagram_username %}
+                            <li>
+                                <a target="_blank" href="https://www.instagram.com/{{ site.github_username }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse">ins</i>
                                     </span>
                                 </a>
                             </li>
